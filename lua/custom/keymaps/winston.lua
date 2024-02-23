@@ -19,5 +19,3 @@ vim.keymap.set('n', '<A-S-j>', ':t.<CR>', { noremap = true, silent = true })
 
 -- Duplicate current line down with Alt+Shift-k
 vim.keymap.set('n', '<A-S-k>', ':t -1<CR>', { noremap = true })
-
-
