@@ -1,6 +1,6 @@
 vim.keymap.set('n', '<leader>fe', vim.cmd.Ex, { desc = '[F]ile [E]xplorer', silent = true })
 
-vim.keymap.set('n', '<leader>help', require('telescope.builtin').help_tags, { desc = 'HELP', silent = true })
+-- vim.keymap.set('n', '<leader>help', require('telescope.builtin').help_tags, { desc = 'HELP', silent = true })
 
 -- Some bindings similar to vscode
 
