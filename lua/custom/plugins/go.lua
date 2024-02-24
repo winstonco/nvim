@@ -1,3 +1,6 @@
+-- vim.treesitter.language.register('html', 'gohtmltmpl')
+-- vim.treesitter.language.register('html', 'gotmpl')
+
 return {
   {
     "ray-x/go.nvim",

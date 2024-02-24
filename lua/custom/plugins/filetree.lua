@@ -26,8 +26,6 @@ return {
                     },
                 },
             })
-            print(require('nvim-web-devicons'
-            ).get_icons())
         end
     },
     {
@@ -46,7 +44,7 @@ return {
                 },
             },
             filters = {
-                dotfiles = true,
+                dotfiles = false,
             },
         },
         config = function(_, opts)

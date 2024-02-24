@@ -131,16 +131,17 @@ require('lazy').setup({
     },
   },
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'navarasu/onedark.nvim',
+    lazy = false,
     priority = 1000,
+    opts = {},
   },
   {
     'nvim-lualine/lualine.nvim',
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'catppuccin',
+        theme = 'onedark',
         component_separators = '|',
         section_separators = '',
       },
@@ -153,10 +154,10 @@ require('lazy').setup({
   { import = 'custom.plugins' },
 }, {})
 
-require('catppuccin').setup({
-  flavour = 'mocha',
+require('onedark').setup({
+  style = 'darker',
 })
-vim.cmd.colorscheme 'catppuccin'
+vim.cmd.colorscheme 'onedark'
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -329,9 +330,10 @@ local servers = {
   -- clangd = {},
   gopls = {},
   pyright = {},
-  -- rust_analyzer = {},
+  rust_analyzer = {},
   tsserver = {},
-  html = { filetypes = { 'html', 'twig', 'hbs' } },
+  htmx = { filetypes = { 'html', 'gotmpl', 'gohtmltmpl' } },
+  html = { filetypes = { 'html', 'gotmpl', 'gohtmltmpl' } },
 
   lua_ls = {
     Lua = {
@@ -369,6 +371,9 @@ mason_lspconfig.setup_handlers {
 require("flutter-tools").setup {} -- use defaults
 
 require('custom.keymaps')
+
+
+
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
