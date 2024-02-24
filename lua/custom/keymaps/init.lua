@@ -1,3 +1,2 @@
-require('custom.keymaps.winston')
+require('custom.keymaps.vscode')
 require('custom.keymaps.terminal')
-
