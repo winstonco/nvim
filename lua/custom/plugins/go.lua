@@ -1,5 +1,4 @@
--- vim.treesitter.language.register('html', 'gohtmltmpl')
--- vim.treesitter.language.register('html', 'gotmpl')
+vim.treesitter.language.register('html', 'gohtmltmpl')
 
 return {
   {
@@ -93,5 +92,17 @@ return {
       opts.ensure_installed = opts.ensure_installed or {}
       vim.list_extend(opts.ensure_installed, { 'goimports', 'gofumpt', 'gomodifytags', 'impl', 'delve' })
     end
+  },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    opts = {
+      ensure_installed = {
+        'go',
+        'gomod',
+        'gowork',
+        'gosum',
+        'html',
+      },
+    },
   }
 }
