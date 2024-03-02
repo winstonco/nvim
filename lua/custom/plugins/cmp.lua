@@ -18,7 +18,9 @@ return {
     config = function()
         local cmp = require('cmp')
         local luasnip = require('luasnip')
-        require('luasnip.loaders.from_vscode').lazy_load()
+        -- require('luasnip.loaders.from_vscode').lazy_load()
+        -- require('luasnip.loaders.from_snipmate').lazy_load()
+        require('luasnip.loaders.from_lua').load({ paths = { './snippets' } })
         luasnip.config.setup {}
 
         cmp.setup {
@@ -27,6 +29,7 @@ return {
                     luasnip.lsp_expand(args.body)
                 end,
             },
+            preselect = cmp.PreselectMode.None,
             completion = {
                 completeopt = 'menu,menuone,noinsert,noselect',
             },
