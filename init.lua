@@ -100,6 +100,7 @@ require('lazy').setup({
         'vimdoc',
         'vim',
         'bash',
+        'go',
       },
       incremental_selection = {
         enable = true,
@@ -173,7 +174,6 @@ require('lazy').setup({
       },
     },
   },
-
   { import = 'custom.plugins' },
 }, {})
 
