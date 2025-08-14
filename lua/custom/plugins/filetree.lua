@@ -32,7 +32,7 @@ return {
         "nvim-tree/nvim-tree.lua",
         opts = {
             view = {
-                width = 25,
+                width = 30,
                 signcolumn = "yes",
             },
             renderer = {
@@ -44,6 +44,7 @@ return {
                 },
             },
             filters = {
+                git_ignored = false,
                 dotfiles = false,
             },
         },

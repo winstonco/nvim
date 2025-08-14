@@ -61,7 +61,7 @@ local servers = {
   gopls = { filetypes = { 'go', 'gomod', } },
   pyright = {},
   rust_analyzer = {},
-  tsserver = {},
+  ts_ls = {},
   htmx = { filetypes = { 'html', 'gotmpl', 'gohtmltmpl' } },
   html = { filetypes = { 'html', 'gotmpl', 'gohtmltmpl' } },
   emmet_ls = { filetypes = { 'html', 'gohtmltmpl' } },
