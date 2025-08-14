@@ -6,11 +6,11 @@ return {
             ignore = '^$',
             toggler = {
                 line = '<C-_>',
-                block = '<leader>bc',
+                -- block = '<C-S-_>',
             },
             opleader = {
                 line = '<C-_>',
-                block = '<leader>b',
+                -- block = '<C-S-_>',
             }
         })
     end,
