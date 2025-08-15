@@ -1,2 +1,1 @@
-require('custom.core.telescope')
-require('custom.core.mason')
+-- require('custom.core.mason')

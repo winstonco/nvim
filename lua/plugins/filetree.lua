@@ -61,58 +61,7 @@ return {
                     nvimTree.tree.focus()
                 end
             end
-            vim.keymap.set("n", "<leader>1", nvimTreeFocusOrToggle)
+            vim.keymap.set("n", "<leader>1", nvimTreeFocusOrToggle, { desc = 'Focus or Toggle NvimTree' })
         end
     }
 }
-
--- vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
-
-
--- return {
---     "nvim-neo-tree/neo-tree.nvim",
---     branch = "v3.x",
---     dependencies = {
---         "nvim-lua/plenary.nvim",
---         "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
---         "MunifTanjim/nui.nvim",
---     },
---     keys = {
---         {
---             "<leader>1",
---             function()
---                 require("neo-tree.command").execute({
---                     action = "focus",
---                     toggle = false,
---                     source = "filesystem",
---                     position = "left",
---                 })
---             end,
---         }
---     },
---     config = function()
---         require('neo-tree').setup({
---             window = {
---                 width = 30,
---                 mappings = {
---                     ["<leader>1"] = {
---                         function()
---                             require("neo-tree.command").execute({
---                                 action = "close"
---                             })
---                         end
---                     }
---                 }
---             },
---             filesystem = {
---                 filtered_items = {
---                     visible = true,
---                     show_hidden_count = true,
---                     hide_dotfiles = false,
---                     hide_gitignored = true
---                 },
---                 hijack_netrw_behavior = "open_default",
---             },
---         })
---     end,
--- }
